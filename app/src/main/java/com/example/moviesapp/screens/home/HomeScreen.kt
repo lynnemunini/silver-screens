@@ -45,7 +45,7 @@ fun MainContent(navController: NavController, movieList: List<String> = listOf(
             items(items = movieList) {
                 MovieRow(movie = it){ movie ->
                     // Navigate to details page
-                    navController.navigate(route = MovieScreens.DetailsScreen.name)
+                    navController.navigate(route = MovieScreens.DetailsScreen.name+"/$movie")
                     Log.d("TAG", "MainContent: $movie")
 
                 }
