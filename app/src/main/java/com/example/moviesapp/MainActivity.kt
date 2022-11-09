@@ -50,7 +50,12 @@ fun MainContent(movieList: List<String> = listOf(
     "Avatar",
     "300",
     "Harry Potter",
-    "Life")) {
+    "Life",
+    "Parents Trap",
+    "College Road Trip",
+    "To All The Boys I've ...",
+    "Don't Breathe",
+    "Scream", "Me Before You ")) {
     Column(modifier = Modifier.padding(12.dp)) {
         LazyColumn{
             items(items = movieList) {
