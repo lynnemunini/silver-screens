@@ -1,6 +1,5 @@
 package com.example.moviesapp.screens.home
 
-import android.graphics.Movie
 import android.util.Log
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
