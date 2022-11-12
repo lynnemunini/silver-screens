@@ -4,11 +4,11 @@ import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.runtime.*
@@ -23,7 +23,6 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import coil.compose.rememberAsyncImagePainter
 import coil.compose.rememberImagePainter
 import coil.transform.CircleCropTransformation
 import com.example.moviesapp.model.Movie
@@ -49,7 +48,7 @@ fun MovieRow(movie: Movie = getMovies()[0],
             horizontalArrangement = Arrangement.Start) {
             Surface(modifier = Modifier
                 .padding(12.dp)
-                .size(100.dp), shape = RectangleShape, elevation = 4.dp){
+                .size(100.dp), shape = CircleShape, elevation = 4.dp){
                 Image(painter = rememberImagePainter(data = movie.images[0],
                     builder = {
                         crossfade(true)
